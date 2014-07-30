@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tad.g730.mmfi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />   
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomWindowTitleTheme" >
+        <activity
+            android:name="tad.g730.mmfi.splash_activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.Light.NoTitleBar" >
+                     <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tad.g730.mmfi.main_activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="tad.g730.mmfi.terms_condition"
+            android:theme="@*android:style/Theme.Light.NoTitleBar" android:screenOrientation="portrait">
+   
+        </activity>
+        <activity
+            android:name="tad.g730.mmfi.abt_app_activity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="tad.g730.mmfi.abt_tad_activity"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="tad.g730.mmfi.acknowledgement"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.Light.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

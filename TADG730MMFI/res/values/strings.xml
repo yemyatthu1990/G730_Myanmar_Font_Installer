@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="acknowlegement">Acknowledgement</string>
+    
+	<string name="status_has_no_myanmar">Has Not Installed</string>
+	<string name="status_has_myanmar">Has Installed</string>
+	<string name="device_not_compatible">Your device model/android version is not supported. This app is dedicated only for Huawei G730-U00 with API 17.</string>
+	<string name="status_installation_fail">Installation Fail</string>
+	<string name="status_uninstallation_fail">Uninstallation Fail</string>
+	<string name="status_require_root">Root Access Required</string>
+	
+	<string name="app_name">TAD G730 MMFI</string>
+	<string name="device_model">Device Model</string>
+	<string name="Version">1.0.0</string>
+	<string name="ver">Version: 1.0.0</string>
+	
+	<string name="install"> 一 Install 一 </string>
+	<string name="retry"> 一 Retry 一 </string>
+	<string name="uninstall"> 一 Unstall 一 </string>
+	<string name="installing">Please Wait, Installing...</string>
+	<string name="uninstalling">Please Wait, Uninstalling...</string>
+	<string name="checking_root_access">Checking Root Access...</string>
+	
+	<string name="abt_tad">About TAD</string>
+	<string name="abt_app">About App</string>
+	<string name="abt_app1">About app:</string>
+	<string name="description_text">Copyright © 2014 TAD\n\nThis app is free of charges as well as open source: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nThis app is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this app. If not, see www.gnu.org/licenses.</string>
+	<string name="about_app">This app is intended for G730-U00 which can\'t display Myanmar font in custom font embedded app. In order to install Myanmar font, make sure your device is fully rooted.</string>
+	<string name="g730_app">G730 Myanmar Font Installer</string>
+	<string name="tad">Talent Ambition Destiny</string>
+	<string name="tad_team">Software Development Team</string>
+	  
+    <string name="about_us_fllow_as_at">Follow us:</string>
+	<string name="about_us_facebook">Facebook @TAD-Dev-Team</string>
+	<string name="about_us_twitter">Twitter @TAD-Dev-Team</string>
+	<string name="lite_github_tad">Github @TAD-Dev-Team</string>
+	<string name="lite_github_g730">Github @TAD G730 MMFI</string>
+	<string name="get_soruce">Get source:</string>
+	
+	<string name="original_creators">ORIGINAL CREATORS</string>	
+	<string name="kst">Ko Kyaw Swar Twin</string>
+	<string name="kst_description">Creator Of Smart Zawgyi Pro</string>
+	<string name="nso">Ko Nay Shane Oo</string>
+	<string name="yla">Ko Ye` Lin Aung</string>
+	<string name="character_lag_fix_description">Creator Of Character Lag Fix on G730-U00</string>
+	
+	<string name="angel_investors">ANGEL INVESTORS</string>
+	<string name="phn">Ko Phone Htet Naing</string>
+	<string name="naz">Ko Nyein Aye Zaw</string>
+	<string name="g730_angel_investor_description">Angel Investor Of G730-U00 For Testing</string>
+	
+	<string name="testers">TESTERS</string>
+	<string name="tester_description">Tester Of This App</string>
+	<string name="nnn">Ko Nyi Nyi Naing</string>
+	<string name="hzo">Ko Han Zaw Oo</string>
+	<string name="ultema">Ultema</string>
+	<string name="ntl">Nyan Thu Lin</string>
+	    
+	<string name="license_agreement">Terms &amp; Condition</string>
+	<string name="disagree">Disagree</string>
+	<string name="agree">Agree</string>
+</resources>

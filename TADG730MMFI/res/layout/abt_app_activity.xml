@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:background="@color/text_white_color"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@id/titlelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:background="@drawable/ic_app_titlebar"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abt_app"
+                    android:layout_marginLeft="16.0dip"
+                    android:textColor="@color/license_agreement_title_font_color"
+                    android:textSize="@dimen/license_agreement_title_font_size" />
+            </LinearLayout>
+            
+       
+            
+
+            <View
+                android:id="@id/titledivider"
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"               
+                android:background="@drawable/divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40.0dip"
+                    android:background="@drawable/app_icon" />
+
+                <TextView
+                    android:id="@id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30.0dip"
+                    android:text="@string/g730_app"
+                    android:textColor="@color/title_color"
+                    android:textSize="18.0dip" />
+                
+                <TextView
+                        android:id="@id/description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10.0dip"
+                        android:text="@string/ver"
+                        android:textColor="@color/title_color"
+                        android:textSize="13.0dip" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9.0dip"
+                android:layout_marginLeft="13.0dip"
+                android:layout_marginTop="30.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/abt_app1"
+                android:textColor="@color/title_color"
+                android:textSize="13.0dip" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13.0dip"
+                android:layout_marginRight="13.0dip"
+                android:background="@drawable/lite_about_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@id/about_app_l"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@id/about_app_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="7.0dip"
+                        android:layout_marginLeft="7.0dip"
+                        android:layout_marginRight="7.0dip"
+                        android:layout_marginTop="7.0dip"
+                        android:layout_weight="2.0"
+                        android:text="@string/about_app"
+                        android:textColor="@color/title_color" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9.0dip"
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginTop="30.0dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/get_soruce"
+                    android:textColor="@color/title_color"
+                    android:textSize="13.0dip" />
+               
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:layout_marginLeft="13.0dip"
+                    android:layout_marginRight="13.0dip"
+                    android:background="@drawable/lite_about_bg"
+                    android:orientation="vertical" >
+					<LinearLayout
+                        android:id="@id/github_g730"
+                        android:clickable="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/lite_about_ic_github" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="7.0dip"
+                            android:layout_weight="2.0"
+                            android:text="@string/lite_github_g730"
+                            android:textColor="@color/title_color" />
+
+                        <ImageView
+                            android:id="@id/twitter_pulldown_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="11.0dip"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/setting_location_choise" />
+                    </LinearLayout>
+                    
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

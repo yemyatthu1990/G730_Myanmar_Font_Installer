@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@id/titlelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/ic_app_titlebar"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/license_agreement"
+                android:textColor="@color/license_agreement_title_font_color"
+                android:textSize="@dimen/license_agreement_title_font_size" />
+        </LinearLayout>
+
+        <View
+            android:id="@id/titledivider"
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:layout_below="@id/titlelayout"
+            android:background="@drawable/divider" />
+
+        <LinearLayout
+            android:id="@id/btn_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/license_agreement_bottom_button_margin"
+            android:layout_marginLeft="@dimen/license_agreement_bottom_button_left_margin"
+            android:layout_marginRight="@dimen/license_agreement_bottom_button_right_margin"
+            android:layout_marginTop="@dimen/license_agreement_bottom_button_margin"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@id/license_agreement_agree"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                
+                android:layout_weight="1.0"
+                android:background="@drawable/licnese_agreement_button_selector"
+                android:text="@string/agree"
+                android:textColor="@color/license_agreement_button_font_color"
+                android:textSize="@dimen/license_agreement_button_font_size" />
+            
+            <Button
+                android:id="@id/license_agreement_disagree"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/license_agreement_button_mid_margin"
+                android:layout_weight="1.0"
+                android:background="@drawable/licnese_agreement_button_selector"
+                android:text="@string/disagree"
+                android:textColor="@color/license_agreement_button_font_color"
+                android:textSize="@dimen/license_agreement_button_font_size" />
+        </LinearLayout>
+	
+        
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="12.0dip"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:background="@drawable/lite_about_bg"
+            android:layout_above="@id/btn_container"
+            android:layout_below="@id/titledivider" >
+  
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15.0dip"
+                android:text="@string/description_text"
+                android:textColor="#ff494949"
+                android:textSize="16.0sp" />
+            
+        </ScrollView>
+        
+    </RelativeLayout>
+
+</LinearLayout>

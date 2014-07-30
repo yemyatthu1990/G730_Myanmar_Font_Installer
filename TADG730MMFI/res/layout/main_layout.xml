@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	
+    <LinearLayout
+        android:id="@id/AcknoledgeLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffffff" >
+        
+
+        <TextView
+            android:id="@id/ackn"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/acknowlegement_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/acknowlegement"
+            android:textColor="#ffccd4db"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/FeatureCursor"
+        android:layout_width="wrap_content"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/FeatureCursor"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@id/titlelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/ic_app_titlebar"
+            android:gravity="center_vertical"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:text="@string/app_name"
+                android:textColor="@color/license_agreement_title_font_color"
+                android:textSize="@dimen/license_agreement_title_font_size" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@id/process_container"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/ic_progress_container_bg" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="3.30" />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                                android:id="@id/device_model"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@string/device_model"
+                                android:textColor="@color/text_blue_color"
+                                android:textSize="@dimen/font_size_20" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="7.5"
+                    android:orientation="vertical" >
+
+                    <LinearLayout 
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+                         <TextView
+                            android:id="@id/state_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@string/status_has_no_myanmar"
+                            android:textColor="@color/text_white_color"
+                            android:textSize="@dimen/main_title_font_size" />                      
+                    </LinearLayout>
+                       
+                    
+
+                    <FrameLayout
+                        android:id="@id/mid_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <Button
+                            android:id="@id/function_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/function_button_top_margin"
+                            android:background="@drawable/function_button_selector"
+                            android:paddingLeft="@dimen/function_button_padding"
+                            android:paddingRight="@dimen/function_button_padding"
+                            android:text="@string/install"
+                            android:textColor="@color/text_white_color"
+                            android:textSize="@dimen/font_size_20" />
+
+                        <LinearLayout
+                            android:id="@id/process_tip_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/centre_tip_txt_margin"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@id/centre_tip_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/centre_tip_txt_margin"
+                                android:textColor="@drawable/tip_text_selector"
+                                android:textSize="@dimen/font_size_20" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/scan_progress_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_scan"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+
+            <TableLayout
+                android:id="@id/about_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white_background_color"
+                android:stretchColumns="0,1" >
+
+                <TableRow
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0" >
+
+                    <FrameLayout
+                        android:layout_width="1.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="6.0dip"
+                        android:layout_marginTop="4.0dip" >
+
+                        <LinearLayout
+                            android:id="@id/abt_app_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/abt_button_selector"
+                            android:clickable="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@id/abt_app_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14.0dip"    
+                                android:src="@drawable/abt_app_icon_selector" />
+
+                            <TextView
+                                android:id="@id/abt_app_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"                                
+                                android:paddingTop="10.0dip"
+                                android:text="@string/abt_app"
+                                android:textColor="@drawable/second_state_text_selector"
+                                android:textSize="14.0sp" />
+
+                            <TextView
+                                android:id="@id/abt_app_txt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:paddingTop="10.0dip"
+                                android:text="@string/g730_app"
+                                android:textColor="#ff93a4b3"
+                                android:textSize="8.0sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="1.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="4.0dip"
+                        android:layout_marginRight="6.0dip"
+                        android:layout_marginTop="4.0dip" >
+
+                        <LinearLayout
+                            android:id="@id/abt_tad_btn"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/abt_button_selector"
+                            android:clickable="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@id/abt_tad_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14.0dip"
+                                android:src="@drawable/abt_tad_icon_selector" />
+
+                            <TextView
+                                android:id="@id/abt_tad_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10.0dip"
+                                android:text="@string/abt_tad"
+                                android:textColor="@drawable/second_state_text_selector"
+                                android:textSize="14.0sp" />
+
+                            <TextView
+                                android:id="@id/abt_tad_txt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:paddingTop="10.0dip"
+                                android:text="@string/tad_team"
+                                android:textColor="#ff93a4b3"
+                                android:textSize="8.0sp" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

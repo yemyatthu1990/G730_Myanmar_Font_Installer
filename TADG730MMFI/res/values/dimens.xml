@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    
+    <dimen name="main_title_font_size">22.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+    <dimen name="title_font_size">16.0sp</dimen>
+	<dimen name="font_size_20">20.0sp</dimen>
+    <dimen name="font_size_14">14.0sp</dimen>
+    <dimen name="function_button_top_margin">14.0dip</dimen>
+    <dimen name="centre_tip_txt_margin">28.0dip</dimen>
+    <dimen name="function_button_padding">10.0dip</dimen>
+    <dimen name="tip_top_margin">10.0dip</dimen>
+    
+	<dimen name="license_agreement_title_font_size">16.0dip</dimen>
+	<dimen name="license_agreement_bottom_button_left_margin">28.0dip</dimen>
+	<dimen name="license_agreement_bottom_button_right_margin">28.0dip</dimen>
+	<dimen name="license_agreement_bottom_button_margin">8.0dip</dimen>
+	<dimen name="license_agreement_button_font_size">16.0dip</dimen>
+    <dimen name="license_agreement_button_mid_margin">28.0dip</dimen>
+    
+    <dimen name="grid_2">8dp</dimen>
+    <dimen name="grid_14">56dp</dimen>
+    <dimen name="grid_4">16dp</dimen>
+</resources>
