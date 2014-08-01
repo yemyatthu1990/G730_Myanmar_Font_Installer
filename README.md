@@ -3,7 +3,7 @@ G730_Myanmar_Font_Installer
 
 Myanmar font installer for Huawei G730-U00 which have a problem with simple zawgyi font embedded apps.
 If you want a prebuilt, it is recommended to download it from [here](http://d-h.st/UVX).
-For more details about how this app works, take a look at [here](https://www.facebook.com/talentambitiondestiny/posts/1435469900069838?fref=nf).
+For more details what this app for, take a look at [here](https://www.facebook.com/talentambitiondestiny/posts/1435469900069838?fref=nf).
 
 ### Checking out the source
 
