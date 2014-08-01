@@ -1,6 +1,10 @@
 G730_Myanmar_Font_Installer
 ===========================
 
+Myanmar font installer for Huawei G730-U00 which have a problem with simple zawgyi font embedded apps.
+If you want a prebuilt, it is recommended to download it from [here](http://d-h.st/UVX).
+For more details about how this app works, take a look at [here](https://www.facebook.com/talentambitiondestiny/posts/1435469900069838?fref=nf).
+
 ### Checking out the source
 
 You'll need support v7. You can git clone it from this repository or get it using gradle/maven.
@@ -14,7 +18,7 @@ Make sure the SDK Platform for API 19 is installed, through the Android SDK Mana
 
 ### Eclipse
 
-In Eclipse, import appcompat_v7 and TADG730MMFI. In your package explorer, right click on TADG730MMFI project -> Properties -> Android -> Add -> appcompat_v7. Now you're good to go with eclipse.
+In Eclipse, import appcompat_v7 and TADG730MMFI. In your Package Explorer, right click on TADG730MMFI project -> Properties -> Android -> Add -> appcompat_v7. Now you're good to go with eclipse.
 
 ### Building the restore binary
 
@@ -36,14 +40,14 @@ The restore binary will built into TADG730MMFI/libs/armeabi/restore.
 6. Now, this modded framework.odex will return only typeface of /system/framework/Roboto-Regular.ttf. So that, fonts from assets of any custom font embedded apps will not take effect anymore.
 
 
-##### References For Decompile & Recompiling odex files
+##### References for decompile & recompiling odex files
 * [
 [HOW TO][Windows] Manually Deodex and Odex back](http://forum.xda-developers.com/galaxy-s2/themes-apps/how-to-manually-deodex-odex-t1208320). This method also works on Linux and OS X.
 * [[GUIDE/TOOL] Make a new odex file (1by1_ReOdexer batch file)](http://forum.xda-developers.com/showthread.php?t=1853569).
 * [
 [HOW-TO] Decompile ICS and above apk and jar files MANUALLY](http://forum.xda-developers.com/showthread.php?t=1732635).
 
-**Orginal**
+**Orginal "createFromAssets" method**
 ```
 .method public static createFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;
     .registers 4
@@ -63,7 +67,7 @@ The restore binary will built into TADG730MMFI/libs/armeabi/restore.
     return-object v0
 .end method
 ```
-**Modded**
+**Modded "createFromAssets" method**
 ```
 .method public static createFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;
     .registers 4
@@ -87,6 +91,3 @@ The restore binary will built into TADG730MMFI/libs/armeabi/restore.
     return-object v0
 .end method
 ```
-
-
-
