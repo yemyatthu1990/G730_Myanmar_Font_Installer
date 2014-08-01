@@ -12,11 +12,11 @@ You'll need support v7. You can git clone it from this repository or get it from
 
 Make sure the SDK Platform for API 19 is installed, through the Android SDK Manager.  Install NDK Revision 9b from [here](http://developer.android.com/tools/sdk/ndk/index.html).
 
-## Eclipse
+### Eclipse
 
 In Eclipse, import appcompat_v7 and TADG730MMFI. In your package explorer, right click on TADG730MMFI project -> Properties -> Android -> Add -> appcompat_v7. Now you're good to go with eclipse.
 
-## Building the restore binary
+### Building the restore binary
 
 Make sure you have the android-ndk downloaded with the tool "ndk-build" in your path.
 
@@ -26,7 +26,7 @@ Make sure you have the android-ndk downloaded with the tool "ndk-build" in your 
 
 The restore binary will built into TADG730MMFI/libs/armeabi/restore.
 
-## Modifying the framework.odex
+### Modifying the framework.odex
 
 1. Pull all files from system/framework directory of your device
 2. Decompile framework.odex
