@@ -11,8 +11,7 @@ You'll need support v7. You can git clone it from this repository or get it usin
 
 * $ mkdir /path/to/src/
 * $ cd /path/to/src/
-* $ git clone git://github.com/TAD-Dev-Team/G730_Myanmar_Font_Installer/appcompat_v7
-* $ git clone git://github.com/TAD-Dev-Team/G730_Myanmar_Font_Installer/TADG730MMFI
+* $ git clone git://github.com/TAD-Dev-Team/G730_Myanmar_Font_Installer
 
 Make sure the SDK Platform for API 19 is installed, through the Android SDK Manager.  Install NDK Revision 9b from [here](http://developer.android.com/tools/sdk/ndk/index.html).
 
