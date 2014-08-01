@@ -3,7 +3,7 @@ G730_Myanmar_Font_Installer
 
 ### Checking out the source
 
-You'll need support v7. You can git clone it from this repository or get it from google.
+You'll need support v7. You can git clone it from this repository or get it using gradle/maven.
 
 * $ mkdir /path/to/src/
 * $ cd /path/to/src/
@@ -28,9 +28,20 @@ The restore binary will built into TADG730MMFI/libs/armeabi/restore.
 
 ### Modifying the framework.odex
 
-1. Pull all files from system/framework directory of your device
-2. Decompile framework.odex
-3. Edit "createFromAssets" method located in android/graphics/Typeface.smaliCodes to be editted are shown below.
+1. Pull all files from system/framework directory of your device.
+2. Decompile framework.odex.
+3. Edit "createFromAssets" method located in android/graphics/Typeface.smali. Codes to be editted are shown below.
+4. SMALI the decompiled folder of framework.odex in a classes.dex file and pack it into framework.jar to make it deodexed.
+5. Push it to somewhere on your device, odex and sign it
+6. Now, this modded framework.odex will return only typeface of /system/framework/Roboto-Regular.ttf. So that, fonts from assets of any custom font embedded apps will not take effect anymore.
+
+
+### References For Decompile & Recompiling odex files
+* [
+[HOW TO][Windows] Manually Deodex and Odex back](http://forum.xda-developers.com/galaxy-s2/themes-apps/how-to-manually-deodex-odex-t1208320). This method also works on Linux and OS X.
+* [[GUIDE/TOOL] Make a new odex file (1by1_ReOdexer batch file)](http://forum.xda-developers.com/showthread.php?t=1853569).
+* [
+[HOW-TO] Decompile ICS and above apk and jar files MANUALLY](http://forum.xda-developers.com/showthread.php?t=1732635).
 
 **Orginal**
 ```
