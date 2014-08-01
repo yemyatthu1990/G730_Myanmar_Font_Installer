@@ -26,7 +26,7 @@ Make sure you have the android-ndk downloaded with the tool "ndk-build" in your 
 
 The restore binary will built into TADG730MMFI/libs/armeabi/restore.
 
-### Modifying the framework.odex
+##### Modifying the framework.odex
 
 1. Pull all files from system/framework directory of your device.
 2. Decompile framework.odex.
@@ -36,7 +36,7 @@ The restore binary will built into TADG730MMFI/libs/armeabi/restore.
 6. Now, this modded framework.odex will return only typeface of /system/framework/Roboto-Regular.ttf. So that, fonts from assets of any custom font embedded apps will not take effect anymore.
 
 
-### References For Decompile & Recompiling odex files
+##### References For Decompile & Recompiling odex files
 * [
 [HOW TO][Windows] Manually Deodex and Odex back](http://forum.xda-developers.com/galaxy-s2/themes-apps/how-to-manually-deodex-odex-t1208320). This method also works on Linux and OS X.
 * [[GUIDE/TOOL] Make a new odex file (1by1_ReOdexer batch file)](http://forum.xda-developers.com/showthread.php?t=1853569).
