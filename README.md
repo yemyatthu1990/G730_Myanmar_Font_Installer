@@ -1,7 +1,7 @@
 G730_Myanmar_Font_Installer
 ===========================
 
-## Checking out the source
+### Checking out the source
 
 You'll need support v7. You can git clone it from this repository or get it from google.
 
