@@ -30,14 +30,14 @@ Make sure you have the android-ndk downloaded with the tool "ndk-build" in your 
 
 The restore binary will built into TADG730MMFI/libs/armeabi/restore.
 
-##### Modifying the framework.odex
+### Modifying the framework.odex
 
 1. Pull all files from system/framework directory of your device.
 2. Decompile framework.odex.
 3. Edit "createFromAssets" method located in android/graphics/Typeface.smali. Codes to be editted are shown below.
 4. SMALI the decompiled folder of framework.odex in a classes.dex file and pack it into framework.jar to make it deodexed.
 5. Push it to somewhere on your device, odex and sign it
-6. Now, this modded framework.odex will return only typeface of /system/framework/Roboto-Regular.ttf. So that, fonts from assets of any custom font embedded apps will not take effect anymore.
+6. Now, this modded framework.odex will return only typeface of /system/framework/Roboto-Regular.ttf to Typface.createFromAssets(AssetManager mgr, String path) used in application. So that, fonts from assets of any custom font embedded apps will not take effect anymore.
 
 
 ##### References for decompile & recompiling odex files
