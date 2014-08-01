@@ -39,7 +39,7 @@ The restore binary will built into TADG730MMFI/libs/armeabi/restore.
 6. Now, this modded framework.odex will return only typeface of /system/framework/Roboto-Regular.ttf to Typface.createFromAssets(AssetManager mgr, String path) used in application. So that, fonts from assets of any custom font embedded apps will not take effect anymore.
 
 
-##### References for decompile & recompiling odex files
+##### References for decompiling & recompiling odex files
 * [
 [HOW TO][Windows] Manually Deodex and Odex back](http://forum.xda-developers.com/galaxy-s2/themes-apps/how-to-manually-deodex-odex-t1208320). This method also works on Linux and OS X.
 * [[GUIDE/TOOL] Make a new odex file (1by1_ReOdexer batch file)](http://forum.xda-developers.com/showthread.php?t=1853569).
