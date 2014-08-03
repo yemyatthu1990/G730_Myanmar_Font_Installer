@@ -3,7 +3,7 @@ G730_Myanmar_Font_Installer
 
 Myanmar font installer for Huawei G730-U00 which have a problem with simple zawgyi font embedded apps.
 If you want a prebuilt, it is recommended to download it from [here](http://d-h.st/UVX).
-For more details what this app for, take a look at [here](https://www.facebook.com/talentambitiondestiny/posts/1435469900069838?fref=nf).
+For more details what this app for and what it actually does, take a look at [here](https://www.facebook.com/talentambitiondestiny/posts/1435469900069838?fref=nf) and [here](https://www.facebook.com/talentambitiondestiny/posts/1436301329986695).
 
 ### Checking out the source
 
@@ -35,7 +35,7 @@ The restore binary will built into TADG730MMFI/libs/armeabi/restore.
 2. Decompile framework.odex.
 3. Edit "createFromAssets" method located in android/graphics/Typeface.smali. Codes to be editted are shown below.
 4. SMALI the decompiled folder of framework.odex in a classes.dex file and pack it into framework.jar to make it deodexed.
-5. Push it to somewhere on your device, odex and sign it
+5. Push it to somewhere on your device and odex it. (sign it only while installation)
 6. Now, this modded framework.odex will return only typeface of /system/framework/Roboto-Regular.ttf to Typface.createFromAssets(AssetManager mgr, String path) used in application. So that, fonts from assets of any custom font embedded apps will not take effect anymore.
 
 
